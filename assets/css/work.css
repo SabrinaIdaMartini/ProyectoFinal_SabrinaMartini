@@ -1,0 +1,33 @@
+.workMedia {
+  width: 100px; }
+
+video {
+  width: 60%;
+  margin-top: 100px;
+  display: block;
+  margin: auto; }
+
+.videoTitle {
+  text-align: center;
+  text-transform: uppercase;
+  font-family: var(--font-family-text);
+  font-size: var(--font-size-l); }
+
+.workTitle {
+  text-align: center;
+  text-transform: uppercase;
+  font-family: var(--font-family-text);
+  font-size: var(--font-size-l);
+  margin-top: 100px; }
+
+.row {
+  width: 60%;
+  display: flex;
+  margin: 0 auto; }
+
+.column {
+  width: 33.33%;
+  padding: 5px; }
+
+.illustrationSize {
+  width: 100%; }
