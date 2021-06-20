@@ -14,6 +14,7 @@ nav {
     display: flex;
     align-items: center;
     justify-content: flex-end;
+    z-index: 9999;
 }
 
 .nav-links {
@@ -21,46 +22,44 @@ nav {
     justify-content: space-between;
     width: 40%;
     margin-right: 40px;
-
-    li {
-        list-style: none;
-        display: inline-block;
-    }
-
-    a {
-        letter-spacing: 2px;
-        font-family: var(--font-family-text);
-        font-size: var(--font-size-m);
-        text-decoration: none;
-        color: black;
-        -webkit-transition: 0.2s linear;
-        -moz-transition: 0.2s linear;
-        -o-transition: 0.2s linear;
-        transition: 0.2s linear;
-        display: inline-block;
-
-        &:hover {
-            color: #E13A94;
-            font-weight: bold;
-            font-size: var(--font-size-m);
-            text-decoration: underline;
-        } 
-    }
 }
+
+.nav-links li {
+    list-style: none;
+    display: inline-block;
+}
+
+.nav-links a {
+    letter-spacing: 2px;
+    font-family: var(--font-family-text);
+    font-size: var(--font-size-m);
+    text-decoration: none;
+    color: black;
+    -webkit-transition: 0.2s linear;
+    -moz-transition: 0.2s linear;
+    -o-transition: 0.2s linear;
+    transition: 0.2s linear;
+    display: inline-block;
+}
+
+.nav-links li a:hover {
+    color: #E13A94;
+    font-weight: bold;
+    font-size: var(--font-size-m);
+    text-decoration: underline;
+  }
 
 .burger {
     display: none;
-
-    .burger div {
-        width: 25px;
-        height: 3px;
-        background-color: black;
-        margin: 5px;
-        transition: all 0.3s ease;
-    }    
 }
 
-
+.burger div {
+    width: 25px;
+    height: 3px;
+    background-color: black;
+    margin: 5px;
+    transition: all 0.3s ease;
+}
 
 @media screen and (max-width: 1024px) {
     .nav-links {

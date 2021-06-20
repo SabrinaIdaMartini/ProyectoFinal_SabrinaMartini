@@ -1,8 +1,3 @@
-/* APLIACIÓN DE VARIABLES EN SASS */
-
-$medium-padding: 20px;
-$small-padding: 10px;
-$extra-small-padding: 5px;
 
 body{
     display: grid;
@@ -10,7 +5,7 @@ body{
     grid-template-areas: 
     "header header header"
     "title title title"    
-    "socialMedia socialMedia socialMedia"
+    "skills illustration illustration"
     "skills illustration illustration"
     "footer footer footer";
 }
@@ -41,6 +36,7 @@ header {
 .skills {
     grid-area: skills;
     margin-top: 100px;
+    background-color: blue;
     display: contents;
 }
 
@@ -55,19 +51,18 @@ footer>div{
     justify-content: space-between;
 }
 
-/* APLIACIÓN DE VARIABLES EN SASS */
-
-.skills__bars {
-    padding: $medium-padding+$extra-small-padding $medium-padding*1.5;    
-    font-family: var(--font-family-text);    
+.skillsBars {
+    padding: 25px 30px;    
+    font-family: var(--font-family-text);
+    margin-top: 60px;  
 }
 
-.skills__bars .bar {
+.skillsBars .bar {
     margin: 20px 0;
 }
 
 
-.skills__bars .bar .progress-line {
+.skillsBars .bar .progress-line {
     height: 10px;
     width: 100%;
     background: #f5f2eb;
@@ -122,21 +117,19 @@ footer>div{
     animation: animate 1s 1s cubic-bezier(1, 0, 0.5, 1) forwards;
 }
 
-
-// BEM
-
-.skills__containerTitles {
+.skillTitlesContainer {
     display: flex;
     align-items: center;
     justify-content: space-between;    
 }
 
-.skills__titles {
+.skillTitles {
     font-weight: bold;
 }
 
 .container {
-    margin: 0; 
+    margin: 0;
+    margin-top: 100px;
     float: right;
     position: relative;
     display: flex;

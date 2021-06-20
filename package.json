@@ -5,9 +5,7 @@
   "main": "index.js",
   "scripts": {
     "build": "node-sass assets/sass/ -o assets/css/",
-    "watcher": "node-sass -w assets/sass/ -o assets/css/",
-    "build-css": "node-sass --include-path scss assets/sass/ -o assets/css/",
-    "watch-css": "nodemon -e scss -x \"npm run build-css\""
+    "watcher": "node-sass -w assets/sass/ -o assets/css/"
   },
   "author": "",
   "license": "ISC",
