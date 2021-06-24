@@ -29,7 +29,7 @@ header {
 .socialMedia {
     grid-area: socialMedia;
     position: relative;
-    float: left;
+    justify-content: center;
 }
 
 .mainContainer {
@@ -40,7 +40,7 @@ header {
 .skills {
     grid-area: skills;
     margin-top: 100px;
-    background-color: blue;
+    background-color: black;
     display: contents;
 }
 
@@ -48,7 +48,7 @@ header {
 
 footer{
     grid-area: footer;
-    border: 2px solid salmon;
+    border: 2px solid rgb(122, 115, 114);
 }
 footer>div{
     display: flex;
