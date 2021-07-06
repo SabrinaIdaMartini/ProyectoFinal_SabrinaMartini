@@ -1,6 +1,22 @@
 .portrait {
   width: 500px;
-  float: right;
+  float: center;
   border: 3px solid black;
-  margin-right: 60px;
+}
+
+@media screen and (min-width: 768px) {
+  .portrait {
+    width: 500px;
+    float: right;
+    border: 3px solid black;
+    margin-right: 60px;
+  }
+
+@media screen and (min-width: 1280px) {
+	.portrait {
+    width: 500px;
+    float: right;
+    border: 3px solid black;
+    margin-right: 60px;
+  }
 }

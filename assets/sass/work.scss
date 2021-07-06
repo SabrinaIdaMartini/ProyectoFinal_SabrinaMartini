@@ -7,7 +7,7 @@ $extra-small-padding: 5px;
 }
 
 video {
-	width: 60%;
+	width: 80%;
 	margin-top: 100px;
 	display: block;
 	margin: auto;
@@ -18,27 +18,26 @@ video {
 	text-align: center;
 	text-transform: uppercase;
 	font-family: var(--font-family-text);
-	font-size: var(--font-size-l);
+	font-size: var(--font-size-m);
 }
 
 .workTitle {
 	text-align: center;
 	text-transform: uppercase;
 	font-family: var(--font-family-text);
-	font-size: var(--font-size-l);
+	font-size: var(--font-size-m);
 	margin-top: 100px;
 }
 
 
 .row {
-	width: 60%;
-	display: flex;
+	width: 80%;
 	margin: 0 auto;
 }
 
 .column {
-	width: 33.33%;
-	padding: $extra-small-padding;
+	width: 100%;
+	padding: $small-padding 0;
 }
 
 
@@ -47,3 +46,44 @@ video {
 }
 
 
+@media screen and (min-width: 768px) {
+	.videoTitle {
+		font-family: var(--font-family-title);
+		font-size: var(--font-size-m);
+	}
+	.workTitle {
+		font-family: var(--font-family-title);
+		font-size: var(--font-size-m);
+	}
+	video {
+		width: 70%;
+	}
+	.row {
+		display: flex;
+	}
+	.column {
+		width: 80%;
+		padding: 0 $extra-small-padding;
+	}
+}
+
+@media screen and (min-width: 1280px) {
+	.videoTitle {
+		font-family: var(--font-family-title);
+		font-size: var(--font-size-l);
+	}
+	.workTitle {
+		font-family: var(--font-family-title);
+		font-size: var(--font-size-l);
+	}
+	video {
+		width: 70%;
+	}
+	.row {
+		display: flex;
+	}
+	.column {
+		width: 70%;
+		padding: 0 $small-padding;
+	}
+}
