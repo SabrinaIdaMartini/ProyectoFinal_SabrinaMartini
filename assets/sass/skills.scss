@@ -3,19 +3,13 @@ $small-padding: 10px;
 $extra-small-padding: 5px;
 
 
-body{
+.mainContainer {
     display: grid;
     grid-template-columns: 20%;
     grid-template-areas: 
-    "header header header"
     "title title title"    
     "skills illustration illustration"
-    "skills illustration illustration"
-    "footer footer footer";
-}
-
-header {
-    grid-area: header;
+    "skills illustration illustration";  
 }
 
 .title {
@@ -42,27 +36,19 @@ header {
     margin-top: 100px;
     background-color: black;
     display: contents;
-}
-
-
-
-footer{
-    grid-area: footer;
-    border: 2px solid rgb(122, 115, 114);
-}
-footer>div{
-    display: flex;
-    justify-content: space-between;
+    width: 400px;
 }
 
 .skillsBars {
     padding: $medium-padding+$extra-small-padding $medium-padding*1.5;   
     font-family: var(--font-family-text);
-    margin-top: 60px;  
+    margin-top: 60px;    
 }
 
 .skillsBars .bar {
-    margin: 20px 0;
+    width: 250px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 
@@ -132,22 +118,14 @@ footer>div{
 }
 
 .container {
-    margin: 0;
-    margin-top: 100px;
-    float: right;
-    position: relative;
-    display: flex;
     flex-direction: column; 
     flex-wrap: wrap;
     align-content: space-evenly;
-    justify-content: space-around;
-    grid-area: illustration;    
+    columns: 2;
+    width: 250px;
+    margin-left: auto;
+    margin-right: auto;
 }
-
-.border {
-    width: 839px;
-    height: 555px;    
- }
 
 
 img {
@@ -155,5 +133,56 @@ img {
 }
 
 .illustration {
-    width: 260px;  
+
+    margin-bottom: 30px;
 }
+
+
+
+@media screen and (min-width: 768px) {
+    .skillsBars .bar {
+        width: 500px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .container {
+        margin: 0;
+        margin-top: 100px;
+        width: 700px;
+        columns: 3;
+        margin-left: auto;
+        margin-right: auto;
+        flex-direction: column; 
+        flex-wrap: wrap;
+        align-content: space-evenly;
+        justify-content: space-around;
+        grid-area: illustration;
+        background-color: red;
+    }
+    
+    .border {
+      
+     }
+  }
+  
+  @media screen and (min-width: 1280px) {
+    .skillsBars .bar {
+        margin: 20px 0;  
+    }
+
+    .container {
+        margin: 0;
+        margin-top: 100px;
+        float: right;
+        position: relative;
+        flex-direction: column; 
+        flex-wrap: wrap;
+        align-content: space-evenly;
+        justify-content: space-around;
+        grid-area: illustration;
+        columns: 3;
+        background-color: green;
+    }
+  }
+  

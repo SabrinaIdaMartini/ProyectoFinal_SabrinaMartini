@@ -19,6 +19,7 @@ video {
 	text-transform: uppercase;
 	font-family: var(--font-family-text);
 	font-size: var(--font-size-m);
+	margin-top: 50px;
 }
 
 .workTitle {
@@ -33,6 +34,7 @@ video {
 .row {
 	width: 80%;
 	margin: 0 auto;
+	margin-top: 20px;
 }
 
 .column {
@@ -50,16 +52,20 @@ video {
 	.videoTitle {
 		font-family: var(--font-family-title);
 		font-size: var(--font-size-m);
+		margin-top: 80px;
 	}
 	.workTitle {
 		font-family: var(--font-family-title);
 		font-size: var(--font-size-m);
+		margin-top: 80px;
 	}
 	video {
 		width: 70%;
+		margin-top: 40px;
 	}
 	.row {
 		display: flex;
+		margin-top: 40px;
 	}
 	.column {
 		width: 80%;
@@ -71,16 +77,20 @@ video {
 	.videoTitle {
 		font-family: var(--font-family-title);
 		font-size: var(--font-size-l);
+		margin-top: 100px;
 	}
 	.workTitle {
 		font-family: var(--font-family-title);
 		font-size: var(--font-size-l);
+		margin-top: 100px;
 	}
 	video {
 		width: 70%;
+		margin-top: 100px;
 	}
 	.row {
 		display: flex;
+		margin-top: 100px;
 	}
 	.column {
 		width: 70%;
