@@ -3,25 +3,7 @@ $small-padding: 10px;
 $extra-small-padding: 5px;
 
 
-.mainContainer {
-    display: grid;
-    grid-template-columns: 20%;
-    grid-template-areas: 
-    "title title title"    
-    "skills illustration illustration"
-    "skills illustration illustration";  
-}
-
-.title {
-    grid-area: title;
-}
-
-.language {
-    grid-area: language;
-}
-
 .socialMedia {
-    grid-area: socialMedia;
     position: relative;
     justify-content: center;
 }
@@ -32,7 +14,6 @@ $extra-small-padding: 5px;
 
 
 .skills {
-    grid-area: skills;
     margin-top: 100px;
     background-color: black;
     display: contents;
@@ -160,15 +141,14 @@ img {
         grid-area: illustration;
         background-color: red;
     }
-    
-    .border {
-      
-     }
+
   }
   
   @media screen and (min-width: 1280px) {
-    .skillsBars .bar {
-        margin: 20px 0;  
+    .skillsBars {
+        margin-top: 100px;
+        padding: 0px;
+        background-color: brown;
     }
 
     .container {
@@ -184,5 +164,15 @@ img {
         columns: 3;
         background-color: green;
     }
+
+    .mainContainer {
+        display: grid;
+        grid-template-columns: 44%;
+        grid-template-areas: 
+        "skills illustration illustration"
+        "skills illustration illustration";  
+    }
+
+
   }
   
