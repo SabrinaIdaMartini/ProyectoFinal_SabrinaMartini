@@ -8,7 +8,6 @@ $extra-small-padding: 5px;
 
 video {
 	width: 80%;
-	margin-top: 100px;
 	display: block;
 	margin: auto;
 }
@@ -20,6 +19,7 @@ video {
 	font-family: var(--font-family-text);
 	font-size: var(--font-size-m);
 	margin-top: 50px;
+	margin-bottom: 20px;
 }
 
 .workTitle {

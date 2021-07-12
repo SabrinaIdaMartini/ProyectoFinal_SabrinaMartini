@@ -42,6 +42,7 @@ $extra-small-padding: 5px;
     transform-origin: left;
     border-radius: 10px;
     animation: animate 1s cubic-bezier(1, 0, 0.5, 1) forwards;
+    margin-bottom: 20px;
 }
 
 @keyframes animate {
@@ -114,7 +115,6 @@ img {
 }
 
 .illustration {
-
     margin-bottom: 30px;
 }
 
@@ -125,11 +125,12 @@ img {
         width: 500px;
         margin-left: auto;
         margin-right: auto;
+        margin-bottom: 30px;
     }
 
     .container {
         margin: 0;
-        margin-top: 100px;
+        margin-top: 30px;
         width: 700px;
         columns: 3;
         margin-left: auto;
@@ -147,8 +148,12 @@ img {
   @media screen and (min-width: 1280px) {
     .skillsBars {
         margin-top: 100px;
-        padding: 0px;
+        padding: 50px;
         background-color: brown;
+    }
+
+    .skillsBars .bar {
+        margin-bottom: 60px;
     }
 
     .container {
@@ -173,6 +178,9 @@ img {
         "skills illustration illustration";  
     }
 
+    .bar {
+       align-items: center;
+    }
 
   }
   
