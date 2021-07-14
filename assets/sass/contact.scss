@@ -7,31 +7,16 @@ input[type=text], select, textarea {
   margin-top: 6px;
   margin-bottom: 16px;
 }
-/*
-input[type=send] {
-  background-color: #04AA6D;
-  color: white;
-  padding: 5px 5px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  font-family: var(--font-family-text);
-  font-size: var(--font-size-m);
-  border: 1px solid #ccc9c0;
-  width: 50px;
-  text-align: center;
-}
 
 
-input[type=send]:hover {
-  background-color: black;
-}
-*/
+/* Botton SEND */
 
 .buttonSend {
   color: black;
   transition: all 0.3s;
   position: relative;
+  padding-left: 20px;
+  padding-bottom: 3px;
 }
 .buttonSend span {
   transition: all 0.3s;
@@ -78,18 +63,61 @@ input[type=send]:hover {
   transform: scale(0.1, 1);
 }
 
+/* Botton reset */
 
-input[type=reset] {
-  margin-left: 5px;
-  font-family: var(--font-family-text);
-  font-size: var(--font-size-s);
-  text-align: center;
+.buttonReset {
+  color: black;
+  transition: all 0.3s;
+  position: relative;
+  padding-left: 20px;
+  padding-bottom: 1px;
+  margin-top: 5px;
+}
+.buttonReset span {
+  transition: all 0.3s;
+}
+.buttonReset::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 80px;
+  height: 20px;
+  z-index: 1;
+  opacity: 0;
+  transition: all 0.3s;
+  border-top-width: 1px;
+  border-bottom-width: 1px;
+  border-top-style: solid;
+  border-bottom-style: solid;
+  border-top-color: #ccc9c0;
+  border-bottom-color: #ccc9c0;
+  transform: scale(0.1, 1);
+}
+.buttonReset:hover span {
+  letter-spacing: 2px;
+}
+.buttonReset:hover::before {
+  opacity: 1; 
+  transform: scale(1, 1); 
+}
+.buttonReset::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 80px;
+  height: 20px;
+  z-index: 1;
+  transition: all 0.3s;
+  background-color: #7c99f8;
+  opacity: 50%;
+}
+.buttonReset:hover::after {
+  opacity: 0; 
+  transform: scale(0.1, 1);
 }
 
-input[type=reset]:hover {
-  background-color: black;
-  color: white;
-}
 
 
 .form {

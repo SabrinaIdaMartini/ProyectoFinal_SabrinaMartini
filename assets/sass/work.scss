@@ -12,7 +12,6 @@ video {
 	margin: auto;
 }
 
-
 .videoTitle {
 	text-align: center;
 	text-transform: uppercase;
@@ -22,7 +21,7 @@ video {
 	margin-bottom: 20px;
 }
 
-.workTitle {
+.graphicsTitle {
 	text-align: center;
 	text-transform: uppercase;
 	font-family: var(--font-family-text);
@@ -31,13 +30,13 @@ video {
 }
 
 
-.row {
+.rowAi {
 	width: 80%;
 	margin: 0 auto;
 	margin-top: 20px;
 }
 
-.column {
+.columnAi {
 	width: 100%;
 	padding: $small-padding 0;
 }
@@ -47,6 +46,13 @@ video {
 	width: 100%;
 }
 
+.photoshop {
+	width: 80%;
+	margin-top: 20px;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+}
 
 @media screen and (min-width: 768px) {
 	.videoTitle {
@@ -54,7 +60,7 @@ video {
 		font-size: var(--font-size-m);
 		margin-top: 80px;
 	}
-	.workTitle {
+	.graphicsTitle {
 		font-family: var(--font-family-title);
 		font-size: var(--font-size-m);
 		margin-top: 80px;
@@ -63,12 +69,21 @@ video {
 		width: 70%;
 		margin-top: 40px;
 	}
-	.row {
+	.rowAi {
 		display: flex;
 		margin-top: 40px;
 	}
-	.column {
+	.columnAi {
 		width: 80%;
+		padding: 0 $extra-small-padding;
+	}
+
+	.photoshop {
+		width: 80%;
+		margin-top: 40px;
+    	margin-left: auto;
+    	margin-right: auto;
+		display: block;
 		padding: 0 $extra-small-padding;
 	}
 }
@@ -77,23 +92,25 @@ video {
 	.videoTitle {
 		font-family: var(--font-family-title);
 		font-size: var(--font-size-l);
-		margin-top: 100px;
+		margin-top: 80px;
 	}
-	.workTitle {
+	.graphicsTitle {
 		font-family: var(--font-family-title);
 		font-size: var(--font-size-l);
 		margin-top: 100px;
 	}
 	video {
 		width: 70%;
-		margin-top: 100px;
+		margin-top: 40px;
 	}
-	.row {
-		display: flex;
-		margin-top: 100px;
-	}
-	.column {
-		width: 70%;
-		padding: 0 $small-padding;
+
+	.photoshop {
+		width: 80%;
+		margin-top: 40px;
+    	margin-left: auto;
+    	margin-right: auto;
+		display: block;
+		padding: 0 $extra-small-padding;
 	}
 }
+  

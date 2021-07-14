@@ -1,22 +1,11 @@
 
-.mainTitle {
+
+span {
+	display: block;
+}
+
+
+h5 {
 	font-family: var(--font-family-title);
-	font-size: var(--font-size-xxl);
-	margin-left: 50px;
-	margin-top: 100px;
-}
-
-
-@media screen and (min-width: 768px) {
-	.mainTitle {
-		font-family: var(--font-family-title);
-		font-size: 80px;
-	}
-}
-
-@media screen and (min-width: 1280px) {
-	.mainTitle {
-		font-family: var(--font-family-title);
-		font-size: 120px;
-	}
+	font-size: var(--font-size-l);
 }
